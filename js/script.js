@@ -1,73 +1,3 @@
-    // let header = document.querySelector('.header'),
-    //     navItem = document.querySelectorAll('.header>div>div'),
-    //     navSpan = document.querySelectorAll('.header__navigation__item-nav'),
-    //     navCart = document.querySelectorAll('.header__block-search-cart-lang>a span'),
-    //     navSearch = document.querySelectorAll('.header__block-search-cart-lang__search i'),
-    //     navLang = document.querySelectorAll('.header__block-search-cart-lang__lang>a');
-    //     burgerSpan = document.querySelectorAll('.header__block-burger>span');
-
-    //     window.onscroll = function(e) {
-    //         if(this.oldScroll <= scrollY){
-    //             console.log('down');
-    //             for (var i = 0; i < navItem.length; i++) {
-    //                 navItem[i].classList.add("black");
-    //             }
-    //             for (var i = 0; i < navSpan.length; i++) {
-    //                 navSpan[i].classList.add("black");
-    //             }
-    //             for (var i = 0; i < navCart.length; i++) {
-    //                 navCart[i].classList.add("black");
-    //             }
-    //             for (var i = 0; i < navLang.length; i++) {
-    //                 navLang[i].classList.add("black");
-    //             }
-    //             for (var i = 0; i < burgerSpan.length; i++) {
-    //                 burgerSpan[i].style.backgroundColor = "black";
-    //             }
-    //             for (var i = 0; i < navSearch.length; i++) {
-    //                 navSearch[i].classList.add("black");
-    //             }
-    //             header.classList.add("bg-white"),
-    //             header.style.top = 0,
-    //             document.querySelector('.header__logo--white').setAttribute('src','img/Logo-black.png')
-    //         }else if(this.scrollY == 0){
-    //             console.log('top')
-
-    //             for (var i = 0; i < navItem.length; i++) {
-    //                 navItem[i].classList.remove("black");
-    //             }
-    //             for (var i = 0; i < navSpan.length; i++) {
-    //                 navSpan[i].classList.remove("black");
-    //             }
-    //             for (var i = 0; i < navCart.length; i++) {
-    //                 navCart[i].classList.remove("black");
-    //             }
-    //             for (var i = 0; i < navLang.length; i++) {
-    //                 navLang[i].classList.remove("black");
-    //             }
-    //             for (var i = 0; i < burgerSpan.length; i++) {
-    //                 burgerSpan[i].style.backgroundColor = "black";
-    //             }
-    //             for (var i = 0; i < navSearch.length; i++) {
-    //                 navSearch[i].classList.remove("black");
-    //             }
-    //             header.classList.remove("bg-white"),
-    //             header.style.top = 0,
-    //             document.querySelector('.header__logo--white').setAttribute('src','img/Logo.png')
-    //         }else if(~window.location.href.indexOf("product")){
-    //             for (var i = 0; i < burgerSpan.length; i++) {
-    //                 burgerSpan[i].style.backgroundColor = "black";
-    //             }
-    //         }
-    //         else{
- 
-
-    //             header.style.top = `-${header.offsetHeight+'px'}`;
-
-    //         }
-    //         this.oldScroll = this.scrollY;
-    //     }
-
     let header = document.getElementById('new-header'),
         navItem = document.querySelectorAll('.header>div>div'),
         navSpan = document.querySelectorAll('.header__navigation__item-nav'),
@@ -100,10 +30,9 @@
             header.style.top = 0,
             header.classList.add("bg-white"),
 
-            // document.querySelector('.header__logo--white').setAttribute('src','/wp-content/themes/barberry/newimg/img/Logo-black.png')
-            document.querySelector('.header__logo--white').setAttribute('src','/img/Logo-black.png')
+
+            document.querySelector('.header__logo--white').setAttribute('src','img/Logo-black.png')
         }else if(this.scrollY == 0){
-            // console.log('top')
 
             for (var i = 0; i < navItem.length; i++) {
                 navItem[i].classList.remove("black");
@@ -125,8 +54,7 @@
             }
             header.classList.remove("bg-white"),
             header.style.top = 0,
-            // document.querySelector('.header__logo--white').setAttribute('src','/wp-content/themes/barberry/newimg/img/Logo.png')
-            document.querySelector('.header__logo--white').setAttribute('src','/img/Logo.png')
+            document.querySelector('.header__logo--white').setAttribute('src','img/Logo.png')
         }else if(~window.location.href.indexOf("product")){
             for (var i = 0; i < burgerSpan.length; i++) {
                 burgerSpan[i].style.backgroundColor = "black";
